@@ -39,6 +39,7 @@ public class ApplicationHooks {
 	@After(order = 1)
 	public void afterTest(Scenario scenario)
 	{
+		
 		if(scenario.isFailed())
 		{
 			String scenarioName = scenario.getName().replaceAll(" ", "_");
